@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Address book</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Cinema 9 <span id="quarter">3/4</span></h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img id="gump" src="https://images-production.global.ssl.fastly.net/uploads/posts/image/128186/forrest-gump-then-and-now.jpg"/>
+<!-- Form ONE -->
+      <form action="index.html" method="post">
+      <div class="radio">
+        <label>
+          <input type="radio" name="gumpUno" id="gumpOne" value="11:00am">
+          11:00am
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="gumpDos" id="gumpTwo" value="5:00am">
+          5:00pm
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="gumpTres" id="gumpThree" value="9:00pm">
+        9:00pm
+        </label>
+      </div>
+      <button type="submit" name="gumpTimes"></button>
+      </form>
+        </div>
+        <!-- Form TWO -->
+        <div id="toy" class="col-md-4">
+          <img src="http://www.scriptmag.com/wp-content/uploads/toystory.jpg"/>
+
+          <form action="index.html" method="post">
+          <div class="radio">
+            <label>
+              <input type="radio" name="toyUno" id="toyOne" value="11:30am">
+              11:30am
+            </label>
+
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="toyDos" id="toyTwo" value="5:30pm">
+              5:30pm
+            </label>
+          </div>
+          <div class="radio disabled">
+            <label>
+              <input type="radio" name="toyTres" id="toyThree" value="9:30pm">
+              9:30pm
+            </label>
+          </div>
+          <button type="submit" name="toyTimes"></button>
+          </form>
+        </div>
+
+        <!-- Form Three -->
+        <div id="daysTimes" class="col-md-4">
+          <img src="http://static.rogerebert.com/uploads/movie/movie_poster/28-days-later-2003/large_sd5B6W6RtsDoHdzhz8oDkNuhhU4.jpg"/>
+          <form action="index.html" method="post">
+          <div class="radio">
+            <label>
+              <input type="radio" name="daysUno" id="daysOne" value="12:00pm">
+              12:00pm
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="daysDos" id="daysTwo" value="6:00pm">
+              6:00pm
+            </label>
+          </div>
+          <div class="radio disabled">
+            <label>
+              <input type="radio" name="daysTres" id="daysThree" value="6:30pm">
+              6:30pm
+            </label>
+          </div>
+          <button type="submit" name="daysTimes"></button>
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
