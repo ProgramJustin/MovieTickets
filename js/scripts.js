@@ -27,6 +27,12 @@ function Ticket(age, time) {
 
 $(document).ready(function() {
 
+  $("form").hide();
+  $("input#showTheTimes").click(function() {
+    $("form").show();
+    $("input#showTheTimes").toggle();
+
+  });
   $("form").submit(function(event) {
     event.preventDefault();
 
@@ -43,14 +49,9 @@ $(document).ready(function() {
 
     var newTicket = new Ticket(userAge, this.time);
 
-
-
-
     newTicket.cost = newTicket.calCost(userAge, this.time);
     console.log(newTicket);
 
     // var userAge = parseInt(prompt("How old are you"));
-
-
   });
 });
