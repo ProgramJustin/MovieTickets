@@ -7,14 +7,14 @@ function Ticket(age, time) {
 
   Ticket.prototype.calCost = function(age, time) {
 
-      if (age <= 17 && age >= 18 && age >= 65 && time === "11:00am") {
+      if (age <= 17 && age >= 18 && age >= 65 && time === "11:00am" || time === "11:30am") {
 
-    } else if (age >= 65 || time === "11:00am") {
+    } else if (age >= 65 || time === "11:00am" || time === "11:30am") {
 
       return "7.00";
 
 
-    } else if (age <= 17 && age >= 18 &&  time === "11:00am") {
+    } else if (age <= 17 && age >= 18 && time === "11:00am" && time === "11:30am") {
 
       return "7.00";
 
@@ -45,8 +45,8 @@ $(document).ready(function() {
 
 
 
-    newTicket.calCost(userAge, this.time);
 
+    newTicket.cost = newTicket.calCost(userAge, this.time);
     console.log(newTicket);
 
     // var userAge = parseInt(prompt("How old are you"));
